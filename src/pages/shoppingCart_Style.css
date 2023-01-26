@@ -1,5 +1,4 @@
 .mainTitle h1 {
-    margin: 0 0 0 31px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -7,10 +6,10 @@
     line-height: 130%;
 }
 .title1 {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 31px 0 31px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -21,22 +20,22 @@
     border-top: solid 1px  #A7A7A7;
     display: flex;
     justify-content: space-between;
-    padding: 40px 30px 30px 30px;
+    padding: 40px 0 30px 0;
     width: 100%;
 }
 .productsBlock1 {
     border-top: solid 1px  #A7A7A7;
     display: flex;
     justify-content: space-between;
-    padding: 40px 30px 30px 30px;
+    padding: 40px 0 30px 0;
     width: 100%;
 }
 .productsBlock2 {
-    border-top: solid  #A7A7A7;
+    border-top: solid 1px  #A7A7A7;
     height: 1px;
     display: flex;
     justify-content: space-between;
-    padding: 40px 30px 30px 30px;
+    padding: 40px 0 30px 0;
     width: 100%;
 }
 
@@ -137,7 +136,6 @@
     line-height: 130%;
 }
 .rBlockInp {
-    width: 446px;
     height: 73px;
     border-radius: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -152,7 +150,6 @@
     color: #929292;
 }
 .rBlockBtn {
-    width: 446px;
     height: 73px;
     border-radius: 20px;
     background-color: #F188F2;
@@ -173,9 +170,6 @@
 
 
 
-
-
-
 .rightBlock {
     width: 496px;
     height: 393px;
@@ -185,11 +179,108 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 25px;
-    margin: 0 30px 0 60px;
+    margin: 0 0 0 60px;
 }
 .mainBlock {
     display: flex;
 }
 
+.shoppingCatBlock {
+    margin: 0 30px 0 30px;
+}
+.leftBlock {
+    width: 100%;
+}
 
+@media screen and (max-width: 1024px) {
+    .rightBlock{
+        width: 396px;
+        height: 293px;
+    }
+    .rBlockTitles {
+        font-size: 20px;
+        margin: 0 0 16px 0;
+    }
+    .quantity, .qntNum, .amount{
+        font-size: 16px;
+    }
+    .amtNum {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .title1 {
+        width: 750px;
 
+    }
+    .rightBlock{
+        width: 249px;
+        height: 284px;
+    }
+    .rBlockTitles {
+        font-size: 20px;
+        margin: 0 0 16px 0;
+    }
+    .quantity, .qntNum, .amount{
+        font-size: 16px;
+    }
+    .amtNum {
+        font-size: 18px;
+    }
+    .rBlockInp, .rBlockBtnTitle {
+        font-size: 14px;
+    }
+    .title2 p{
+        font-size: 14px;
+    }
+    .countBlock {
+        width: 120px;
+    }
+    .newPrice {
+        font-size: 30px;
+    }
+    .oldPrice {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .mainTitle h1 {
+        font-size: 18px;
+    }
+    .title1 {
+        width: 315px;
+        font-size: 15px;
+
+    }
+    .mainBlock {
+        display: inline;
+    }
+    .productsBlock{
+        border-top: solid 1px  #A7A7A7;
+        display: inline;
+        padding: 20px 0 10px 0;
+    }
+    .productsBlock1{
+        border-top: solid 1px  #A7A7A7;
+        display: inline;
+        padding: 20px 0 10px 0;
+    }
+    .productsBlock2{
+        border-top: solid 1px  #A7A7A7;
+        display: inline;
+        padding: 20px 0 10px 0;
+    }
+    .title2 {
+        height: 20px
+    }
+    .newPrice, .oldPrice {
+        display: block;
+        height: 60px
+    }
+    .deleteProduct {
+        margin: 30px 0 0 0;
+    }
+    .rightBlock {
+        margin: 0 auto;
+    }
+}

@@ -6,7 +6,7 @@ import CloseButton from 'react-bootstrap/CloseButton';
 
 function ShoppingCart() {
     return (
-        <div>
+        <div className="shoppingCatBlock">
             <div className="mainTitle">
                 <h1>Корзина</h1>
                 <div className="title1">
